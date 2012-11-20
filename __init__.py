@@ -1,13 +1,31 @@
-"""Some alternative units expressed in their SI counterparts."""
+"""Some alternative units expressed in their SI counterparts.
+
+This is for convenience only. For a more complete standard package,
+consider e.g. sympy.physics.units 
+"""
+
+# time (in seconds)
+ms = 1e-3 # [s] millisecond
+us = 1e-6 # [s] microsecond
+ns = 1e-9 # [s] nanosecond
+ps = 1e-12 # [s] picosecond
+minute = 60 # [s] minute ('min' is for minimum)
+h = hr = hour = 3600 # [s] hour
+day = 86400 # [s] day
+week = 7 * day # [s] week
+yr = year = 365.25 * day # [s] year
+mo = month = yr / 12. # [s] average month
 
 # length (in meters)
-inch = 0.0254 # [m] inch  ('in' is a reserved word in Python)
-mm = 0.001 # [m]
-cm = 0.01 # [m]
-km = 1e3 # [m]
+inch = 0.0254 # [m] inch  ('in' is a reserved word)
+ft = foot = 0.3048 # [m] foot
+mm = 1e-3 # [m] millimeter
+cm = 1e-2 # [m] centimeter
+km = 1e3 # [m] kilometer
 
 # mass (in kilograms)
 amu = 1.66053886e-27 # [kg] atomic mass unit 
+lb = pound = 0.45359237 # [kg] pound
 
 # energy (in Joules)
 eV = 1.60217646e-19 # [J] electron-Volt
